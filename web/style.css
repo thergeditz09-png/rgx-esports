@@ -1,0 +1,31 @@
+*{box-sizing:border-box}
+body{margin:0;background:#10090c;color:#fff;font-family:Arial,sans-serif;padding-bottom:90px}
+.topbar{height:65px;display:flex;align-items:center;justify-content:space-between;padding:0 19px;background:#180e12;border-bottom:1px solid #382027}
+.brand{font-size:21px;font-weight:900;color:#ff334c}
+.brand span{color:white}
+.avatar{background:#39141e;border:1px solid #ff334c;padding:10px;border-radius:12px;font-size:12px;font-weight:bold}
+main{max-width:650px;margin:auto;padding:18px}
+.hero{background:linear-gradient(140deg,#39101c,#1a0c12 65%,#10090c);border:1px solid #752337;border-radius:19px;padding:25px 19px;position:relative;overflow:hidden}
+.hero:after{content:"RGX";position:absolute;right:-10px;bottom:25px;font-size:100px;font-weight:900;color:#ffffff08;pointer-events:none}
+.tag{font-size:10px;color:#ff6679;letter-spacing:2px;font-weight:bold}
+.hero h1{font-size:42px;line-height:1.05;margin:25px 0 12px;font-weight:1000}
+.hero h1 span{color:#ff334c}
+.hero p{font-size:13px;color:#c4afb5;line-height:1.6;max-width:280px}
+.primary{background:#ff334c;border:0;color:white;padding:15px 18px;border-radius:8px;font-weight:900;margin-top:15px}
+.hero-bottom{font-size:9px;color:#e9aab4;letter-spacing:1px;margin-top:25px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:17px 0 28px}
+.stats div{background:#1d1116;border:1px solid #39212a;border-radius:12px;padding:15px 5px;text-align:center}
+.stats strong{display:block;color:#ff4059;font-size:18px}
+.stats small{font-size:9px;color:#a9949b;display:block;margin-top:6px}
+.section-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.section-heading small{font-size:10px;color:#ff5369;letter-spacing:2px}
+.section-heading h2{font-size:21px;margin:5px 0}
+.live{color:#ff5369;font-size:10px}
+.empty{background:#1b1116;border:1px dashed #59303b;border-radius:14px;padding:35px 15px;text-align:center}
+.empty-icon{font-size:35px}
+.empty h3{font-size:14px}
+.empty p{font-size:12px;color:#a9949b}
+.bottom-nav{position:fixed;bottom:0;left:0;width:100%;height:72px;background:#1a1015;border-top:1px solid #43232d;display:flex;justify-content:space-around;align-items:center}
+.bottom-nav button{border:0;background:none;color:#a9949b;font-size:19px;display:flex;flex-direction:column;align-items:center;gap:5px}
+.bottom-nav button small{font-size:10px}
+.bottom-nav button.active{color:#ff4059}

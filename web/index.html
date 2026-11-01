@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10090c">
+<title>RGX ESPORTS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">⚡ RGX <span>ESPORTS</span></div>
+  <div class="avatar">RGX</div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="tag">OFFICIAL TOURNAMENT PLATFORM</div>
+    <h1>PLAY TO<br><span>DOMINATE.</span></h1>
+    <p>Compete with players. Prove your skills. Become a champion.</p>
+    <button class="primary" onclick="navigate('tournaments')">EXPLORE TOURNAMENTS →</button>
+    <div class="hero-bottom">CPM 1&nbsp; • &nbsp;CPM 2&nbsp; • &nbsp;MORE GAMES</div>
+  </section>
+
+  <section class="stats">
+    <div><strong id="tournamentCount">00</strong><small>TOURNAMENTS</small></div>
+    <div><strong>SOLO</strong><small>GAME MODE</small></div>
+    <div><strong>TEAM</strong><small>GAME MODE</small></div>
+  </section>
+
+  <section id="content">
+    <div class="section-heading">
+      <div><small>COMPETE NOW</small><h2>TOURNAMENTS</h2></div>
+      <span class="live">● LIVE</span>
+    </div>
+    <div class="empty">
+      <div class="empty-icon">🏆</div>
+      <h3>NO TOURNAMENTS YET</h3>
+      <p>New tournaments will appear here.</p>
+    </div>
+  </section>
+</main>
+
+<nav class="bottom-nav">
+  <button class="active" onclick="navigate('tournaments')">🏆<small>Events</small></button>
+  <button onclick="navigate('matches')">🎮<small>Matches</small></button>
+  <button onclick="navigate('leaderboard')">📊<small>Ranks</small></button>
+  <button onclick="navigate('profile')">👤<small>Profile</small></button>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
