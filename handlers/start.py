@@ -1,5 +1,7 @@
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
 from telegram.ext import ContextTypes
+
+WEB_APP_URL = "https://thergeditz09-png.github.io/rgx-esports/"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
@@ -15,12 +17,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     conn.commit()
     conn.close()
 
-    keyboard = [
-        [InlineKeyboardButton(
+    keyboard = [[
+        InlineKeyboardButton(
             "🚀 OPEN RGX ESPORTS",
-            url="https://example.com"
-        )]
-    ]
+            web_app=WebAppInfo(url=WEB_APP_URL)
+        )
+    ]]
 
     await update.message.reply_text(
         "⚡ RGX ESPORTS ⚡\n"
@@ -29,8 +31,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🎮 Games: CPM 1 | CPM 2\n"
         "⚔️ Modes: SOLO | TEAM\n"
         "🏅 Compete with players and climb the leaderboard.\n\n"
-        "📱 Your tournaments, matches, rankings and profile "
-        "are all available in our Mini App.\n\n"
+        "📱 Tournaments, matches, rankings and your profile "
+        "are waiting inside our Mini App.\n\n"
         "━━━━━━━━━━━━━━━━━━\n"
         "🔥 ENTER THE ARENA. MAKE YOUR MARK.",
         reply_markup=InlineKeyboardMarkup(keyboard)
